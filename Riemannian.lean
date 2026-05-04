@@ -2,6 +2,7 @@ import Riemannian.BumpFunction
 import Riemannian.Connection
 import Riemannian.Curvature
 import Riemannian.Gradient
+import Riemannian.LoopSpace
 import Riemannian.Metric
 import Riemannian.SecondFundamentalForm
 import Riemannian.Instances.EuclideanSpace
@@ -45,6 +46,8 @@ AltRegularity                ← consumer
     $|A|^2$, mean curvature.
   * `Gradient.lean`   — manifold gradient via Riesz duality, gradient norm
     squared.
+  * `LoopSpace.lean` — based and free loop-space primitives over a
+    topological space, parameterized by `[0, 1]`.
   * `BumpFunction.lean` — scalar / radial / manifold bumps + tangent
     vector field extension (`OpenGALib.BumpFunction`).
 
@@ -94,6 +97,12 @@ intermediate identities) are internal and may change without notice.
   * `Riemannian.manifoldGradient`
   * `Riemannian.manifoldGradientNormSq`
   * `Riemannian.manifoldGradient_riesz`
+
+**Loop space** (`LoopSpace.lean`):
+  * `Riemannian.LoopInterval`
+  * `Riemannian.BasedLoop`, `Riemannian.LoopSpace`
+  * `Riemannian.FreeLoop`, `Riemannian.FreeLoopSpace`
+  * `Riemannian.BasedLoop.const`, `Riemannian.FreeLoop.const`
 
 **Bump functions** (`BumpFunction.lean`):
   * `OpenGALib.BumpFunction.expDamping`
